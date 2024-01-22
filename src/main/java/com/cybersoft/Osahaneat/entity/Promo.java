@@ -1,0 +1,62 @@
+package com.cybersoft.Osahaneat.entity;
+
+import jakarta.persistence.*;
+
+import java.util.Date;
+
+@Entity(name = "promo")
+public class Promo {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int id;
+
+    @ManyToOne
+    @JoinColumn(name = "res_id")
+    private Restaurant restaurant;
+    @Column(name = "percent")
+    private int percent;
+    @Column(name = "started_date")
+    private Date startedDate;
+    @Column(name = "end_date")
+    private Date endDate;
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public Restaurant getRestaurant() {
+        return restaurant;
+    }
+
+    public void setRestaurant(Restaurant restaurant) {
+        this.restaurant = restaurant;
+    }
+
+    public int getPercent() {
+        return percent;
+    }
+
+    public void setPercent(int percent) {
+        this.percent = percent;
+    }
+
+    public Date getStartedDate() {
+        return startedDate;
+    }
+
+    public void setStartedDate(Date startedDate) {
+        this.startedDate = startedDate;
+    }
+
+    public Date getEndDate() {
+        return endDate;
+    }
+
+    public void setEndDate(Date endDate) {
+        this.endDate = endDate;
+    }
+}

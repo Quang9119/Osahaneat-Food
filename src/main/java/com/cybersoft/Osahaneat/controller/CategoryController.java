@@ -16,6 +16,7 @@ import java.text.ParseException;
 @RestController
 @RequestMapping("/category")
 public class CategoryController {
+    int x = 10;
     @Autowired
     CategoryServiceImp categoryServiceImp;
     @Autowired

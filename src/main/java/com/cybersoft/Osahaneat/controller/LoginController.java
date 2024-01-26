@@ -18,7 +18,7 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @RequestMapping("/login")
 public class LoginController {
-    int x = 4;
+    int x = 3;
     @Autowired
     LoginServiceImp loginServiceImp;
 

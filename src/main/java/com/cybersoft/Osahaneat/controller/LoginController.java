@@ -13,11 +13,12 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 
-int x = 2;
+
 @CrossOrigin("*")
 @RestController
 @RequestMapping("/login")
 public class LoginController {
+    int x = 2;
     @Autowired
     LoginServiceImp loginServiceImp;
 

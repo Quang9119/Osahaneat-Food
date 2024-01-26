@@ -95,7 +95,7 @@ public class RestaurantService implements RestaurantServiceImp {
                 CategoryDTO categoryDTO = new CategoryDTO();
                 List<MenuDTO> menuDTOList = new ArrayList<>();
                 categoryDTO.setName(menuRestaurant.getCategory().getNameCate());
-                //menuloop
+                //menu
                 for (Food food : menuRestaurant.getCategory().getLisFoods()) {
                     MenuDTO menuDTO = new MenuDTO();
                     menuDTO.setImage(food.getImage());

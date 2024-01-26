@@ -15,6 +15,7 @@ import org.springframework.web.multipart.MultipartFile;
 
 import java.text.ParseException;
 
+@CrossOrigin("*")
 @RestController
 @RequestMapping("/restaurant")
 public class RestaurantController {
@@ -24,6 +25,8 @@ public class RestaurantController {
 
     @Autowired
     RestaurantServiceImp restaurantServiceImp;
+
+
 
     @PostMapping()
     public ResponseEntity<?> createRestaurant(@RequestParam MultipartFile file,
@@ -39,11 +42,29 @@ public class RestaurantController {
         return new ResponseEntity<>(responseData, HttpStatus.OK);
     }
 
+
+    @GetMapping()
+    public ResponseEntity<?> getRestaurant() throws ParseException {
+        ResponseData responseData = new ResponseData();
+        responseData.setData(restaurantServiceImp.getHomePageRestaurant());
+        return new ResponseEntity<>(responseData, HttpStatus.OK);
+    }
+
+
+
+
     @GetMapping("/file/{filename:.+}")
     public ResponseEntity<?> getFileRestaurant(@PathVariable String filename) {
         Resource resource = fileServiceImp.loadFile(filename);
         return ResponseEntity.ok()
                 .header(HttpHeaders.CONTENT_DISPOSITION, "attachment; filename=\"" + resource.getFilename() + "\"")
                 .body(resource);
+    }
+
+    @GetMapping("/detail")
+    public ResponseEntity<?> getDetailRestaurant(@RequestParam int id) throws ParseException {
+        ResponseData responseData = new ResponseData();
+        responseData.setData(restaurantServiceImp.getDetailRestaurant(id));
+        return new ResponseEntity<>(responseData, HttpStatus.OK);
     }
 }

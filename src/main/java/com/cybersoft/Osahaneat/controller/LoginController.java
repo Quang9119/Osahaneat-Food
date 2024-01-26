@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.*;
 import javax.crypto.SecretKey;
 import java.beans.Encoder;
 
-
+@CrossOrigin("*")
 @RestController
 @RequestMapping("/login")
 public class LoginController {

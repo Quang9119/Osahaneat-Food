@@ -40,11 +40,11 @@ public class CustomFilterSecurity {
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         http
-                .cors(AbstractHttpConfigurer::disable)
+                .cors(withDefaults())
                 .csrf(AbstractHttpConfigurer::disable)
                 .sessionManagement(httpSecuritySessionManagementConfigurer -> httpSecuritySessionManagementConfigurer.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
                 .authorizeHttpRequests(authorize -> authorize
-                        .requestMatchers("/login/**","/restaurant/file/**").permitAll()
+                        .requestMatchers("/login/**","/restaurant/file/**","/swagger-ui/**","/category/file/**").permitAll()
                         .anyRequest().authenticated()
                 );
         http.addFilterBefore(customJwtFilter, UsernamePasswordAuthenticationFilter.class);

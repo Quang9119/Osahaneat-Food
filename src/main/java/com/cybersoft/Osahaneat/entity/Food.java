@@ -15,6 +15,11 @@ public class Food {
     private String image;
     @Column(name = "time_ship")
     private String timeShip;
+    @Column(name = "is_freeship")
+    private boolean isFreeShip;
+
+
+
     @Column(name = "price")
     private double price;
     @ManyToOne
@@ -72,6 +77,13 @@ public class Food {
 
     public void setTimeShip(String timeShip) {
         this.timeShip = timeShip;
+    }
+    public boolean isFreeShip() {
+        return isFreeShip;
+    }
+
+    public void setFreeShip(boolean freeShip) {
+        isFreeShip = freeShip;
     }
 
     public double getPrice() {

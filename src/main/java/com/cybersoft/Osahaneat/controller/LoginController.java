@@ -2,21 +2,18 @@ package com.cybersoft.Osahaneat.controller;
 
 import com.cybersoft.Osahaneat.payload.ResponseData;
 import com.cybersoft.Osahaneat.payload.request.SignUpRequest;
-import com.cybersoft.Osahaneat.service.LoginService;
+
 import com.cybersoft.Osahaneat.service.imp.LoginServiceImp;
 import com.cybersoft.Osahaneat.utils.JwtUtilsHelper;
-import io.jsonwebtoken.SignatureAlgorithm;
-import io.jsonwebtoken.io.Encoders;
-import io.jsonwebtoken.security.Keys;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.security.crypto.codec.Base64;
+
 import org.springframework.web.bind.annotation.*;
 
-import javax.crypto.SecretKey;
-import java.beans.Encoder;
 
+//hello testbranchA
 @CrossOrigin("*")
 @RestController
 @RequestMapping("/login")

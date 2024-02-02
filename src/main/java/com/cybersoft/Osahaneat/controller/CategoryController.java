@@ -10,19 +10,20 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.text.ParseException;
+
 
 @CrossOrigin("*")
 @RestController
 @RequestMapping("/category")
 public class CategoryController {
+
     @Autowired
     CategoryServiceImp categoryServiceImp;
     @Autowired
     FileServiceImp fileServiceImp;
 
     @GetMapping()
-    public ResponseEntity<?> getHomeCategory() throws ParseException {
+    public ResponseEntity<?> getHomeCategory() {
         ResponseData responseData = new ResponseData();
         responseData.setData(categoryServiceImp.getCategoryHomePage());
         return new ResponseEntity<>(responseData, HttpStatus.OK);

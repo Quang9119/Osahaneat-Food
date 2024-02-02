@@ -5,12 +5,28 @@ public class MenuDTO {
     private String image;
     private boolean isFreeship;
     private Double price;
+    private String desc;
     private Double rating;
 
     public Double getPrice() {
         return price;
     }
 
+    public String getDesc() {
+        return desc;
+    }
+
+    public void setDesc(String desc) {
+        this.desc = desc;
+    }
+
+    public Double getRating() {
+        return rating;
+    }
+
+    public void setRating(Double rating) {
+        this.rating = rating;
+    }
 
     public void setPrice(Double price) {
         this.price = price;

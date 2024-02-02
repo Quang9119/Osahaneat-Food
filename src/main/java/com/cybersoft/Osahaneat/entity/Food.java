@@ -18,7 +18,16 @@ public class Food {
     @Column(name = "is_freeship")
     private boolean isFreeShip;
 
+    @Column(name ="description")
+    private String desc;
 
+    public String getDesc() {
+        return desc;
+    }
+
+    public void setDes(String desc) {
+        this.desc = desc;
+    }
 
     @Column(name = "price")
     private double price;

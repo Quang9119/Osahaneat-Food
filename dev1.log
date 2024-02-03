@@ -1,0 +1,42 @@
+2024-02-03 INFO  14272 c.c.Osahaneat.OsahaneatApplication : Starting OsahaneatApplication using Java 21.0.1 with PID 14272 (D:\CyberLearnSpringBoot\Oshaneat_git\Osahaneat-Food\target\classes started by Minh Quang in D:\CyberLearnSpringBoot\Oshaneat_git\Osahaneat-Food)
+2024-02-03 INFO  14272 c.c.Osahaneat.OsahaneatApplication : No active profile set, falling back to 1 default profile: "default"
+2024-02-03 INFO  14272 o.s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-02-03 INFO  14272 o.s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 55 ms. Found 6 JPA repository interfaces.
+2024-02-03 INFO  14272 o.s.b.w.embedded.tomcat.TomcatWebServer : Tomcat initialized with port 8080 (http)
+2024-02-03 INFO  14272 o.apache.coyote.http11.Http11NioProtocol : Initializing ProtocolHandler ["http-nio-8080"]
+2024-02-03 INFO  14272 o.apache.catalina.core.StandardService : Starting service [Tomcat]
+2024-02-03 INFO  14272 org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/10.1.17]
+2024-02-03 INFO  14272 o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2024-02-03 INFO  14272 o.s.b.w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1280 ms
+2024-02-03 INFO  14272 o.hibernate.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-02-03 INFO  14272 org.hibernate.Version : HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-02-03 INFO  14272 o.h.c.internal.RegionFactoryInitiator : HHH000026: Second-level cache disabled
+2024-02-03 INFO  14272 o.s.o.j.p.SpringPersistenceUnitInfo : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-02-03 INFO  14272 com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Starting...
+2024-02-03 INFO  14272 com.zaxxer.hikari.pool.HikariPool : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@e3c36d
+2024-02-03 INFO  14272 com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Start completed.
+2024-02-03 WARN  14272 org.hibernate.orm.deprecation : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-02-03 WARN  14272 org.hibernate.orm.deprecation : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-02-03 WARN  14272 org.hibernate.mapping.RootClass : HHH000038: Composite-id class does not override equals(): com.cybersoft.Osahaneat.entity.keys.KeyMenuRestaurant
+2024-02-03 WARN  14272 org.hibernate.mapping.RootClass : HHH000039: Composite-id class does not override hashCode(): com.cybersoft.Osahaneat.entity.keys.KeyMenuRestaurant
+2024-02-03 WARN  14272 org.hibernate.mapping.RootClass : HHH000038: Composite-id class does not override equals(): com.cybersoft.Osahaneat.entity.keys.KeyOrderItem
+2024-02-03 WARN  14272 org.hibernate.mapping.RootClass : HHH000039: Composite-id class does not override hashCode(): com.cybersoft.Osahaneat.entity.keys.KeyOrderItem
+2024-02-03 INFO  14272 o.h.e.t.j.p.i.JtaPlatformInitiator : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-02-03 INFO  14272 o.s.o.j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-02-03 WARN  14272 o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-02-03 INFO  14272 o.s.s.web.DefaultSecurityFilterChain : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@301434fb, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1641dfb3, org.springframework.security.web.context.SecurityContextHolderFilter@a8177f6, org.springframework.security.web.header.HeaderWriterFilter@7e34e466, org.springframework.web.filter.CorsFilter@49620576, org.springframework.security.web.authentication.logout.LogoutFilter@67629872, com.cybersoft.Osahaneat.security.CustomJwtFilter@57151b3a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@664217a8, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4b4a3114, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3397c8c0, org.springframework.security.web.session.SessionManagementFilter@a9f7cf8, org.springframework.security.web.access.ExceptionTranslationFilter@45bb502f, org.springframework.security.web.access.intercept.AuthorizationFilter@2b01be54]
+2024-02-03 INFO  14272 o.apache.coyote.http11.Http11NioProtocol : Starting ProtocolHandler ["http-nio-8080"]
+2024-02-03 INFO  14272 o.s.b.w.embedded.tomcat.TomcatWebServer : Tomcat started on port 8080 (http) with context path ''
+2024-02-03 INFO  14272 c.c.Osahaneat.OsahaneatApplication : Started OsahaneatApplication in 4.794 seconds (process running for 5.425)
+2024-02-03 INFO  14272 o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-03 INFO  14272 o.s.web.servlet.DispatcherServlet : Initializing Servlet 'dispatcherServlet'
+2024-02-03 INFO  14272 o.s.web.servlet.DispatcherServlet : Completed initialization in 3 ms
+2024-02-03 INFO  14272 c.c.Osahaneat.controller.LoginController : Kiem tra info log
+2024-02-03 WARN  14272 c.c.Osahaneat.controller.LoginController : Kiem tra warn log
+2024-02-03 ERROR 14272 c.c.Osahaneat.controller.LoginController : Kiem tra error log
+2024-02-03 INFO  14272 c.c.Osahaneat.controller.LoginController : Kiem tra info log
+2024-02-03 WARN  14272 c.c.Osahaneat.controller.LoginController : Kiem tra warn log
+2024-02-03 ERROR 14272 c.c.Osahaneat.controller.LoginController : Kiem tra error log
+2024-02-03 INFO  14272 c.c.Osahaneat.controller.LoginController : Kiem tra info log
+2024-02-03 WARN  14272 c.c.Osahaneat.controller.LoginController : Kiem tra warn log
+2024-02-03 ERROR 14272 c.c.Osahaneat.controller.LoginController : Kiem tra error log

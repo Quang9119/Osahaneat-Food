@@ -1,6 +1,7 @@
 package com.cybersoft.Osahaneat.dto;
 
 public class MenuDTO {
+    private int id;
     private String title;
     private String image;
     private boolean isFreeship;
@@ -14,6 +15,14 @@ public class MenuDTO {
 
     public String getDesc() {
         return desc;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public void setDesc(String desc) {

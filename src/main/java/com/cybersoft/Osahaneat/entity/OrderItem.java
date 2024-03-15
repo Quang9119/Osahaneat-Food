@@ -21,6 +21,22 @@ public class OrderItem {
     @Column(name = "price")
     private double price;
 
+    public Orders getOrders() {
+        return orders;
+    }
+
+    public void setOrders(Orders orders) {
+        this.orders = orders;
+    }
+
+    public Food getFood() {
+        return food;
+    }
+
+    public void setFood(Food food) {
+        this.food = food;
+    }
+
     public KeyOrderItem getKeys() {
         return keys;
     }
